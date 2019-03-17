@@ -1,0 +1,8 @@
+drop table price if exists;
+drop table product if exists;
+drop sequence if exists hibernate_sequence;
+
+create sequence hibernate_sequence start with 1 increment by 1;
+create table price (id bigint not null, base_price double, max_retail_price double, tax double, primary key (id));
+create table product (id bigint not null, description varchar(255), title varchar(255), price_id bigint, primary key (id));
+alter table product add constraint FK2l5ugesxirs8wp4iqcmji7g8m foreign key (price_id) references price;

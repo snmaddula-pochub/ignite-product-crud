@@ -1,0 +1,21 @@
+ignite:
+  config:
+    path: classpath:products-poc-server.xml
+  datasource:
+    url: jdbc:ignite:thin://localhost:10800
+    username: ignite
+    password: ignite
+    driver-class-name: org.apache.ignite.IgniteJdbcThinDriver
+
+spring:
+  datasource:
+    url: jdbc:h2:tcp://localhost/~/products
+    username: sa
+    password: 
+    driver-class-name: org.h2.Driver
+    
+    
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none

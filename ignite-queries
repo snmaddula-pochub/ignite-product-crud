@@ -1,0 +1,5 @@
+sqlline -u jdbc:ignite:thin://localhost:10800
+
+select * from "ProductCache"."PRODUCT";
+
+select * from "PriceCache"."PRICE";
