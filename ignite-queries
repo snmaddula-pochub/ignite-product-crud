@@ -3,3 +3,6 @@ sqlline -u jdbc:ignite:thin://localhost:10800
 select * from "ProductCache"."PRODUCT";
 
 select * from "PriceCache"."PRICE";
+
+API HELP:
+https://www.programcreek.com/java-api-examples/?class=org.apache.ignite.configuration.IgniteConfiguration&method=setIgniteInstanceName
